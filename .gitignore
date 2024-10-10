@@ -15,7 +15,7 @@ web-build/
 *.p12
 *.key
 *.mobileprovision
-credentials.js
+./credentials.js
 
 # Metro
 .metro-health-check*

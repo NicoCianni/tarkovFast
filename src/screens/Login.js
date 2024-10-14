@@ -19,8 +19,9 @@ const Login = (props) => {
         }
     }
 
+
     return (
-        <ImageBackground source={{uri:"https://i.pinimg.com/originals/8b/32/07/8b320722b8fabe87fa03e14e953e3783.jpg"}} style={styles.logo}>
+        <ImageBackground source={{uri:"https://wallpaperaccess.com/full/2121144.png"}} style={styles.logo}>
             <View style={styles.user}>
                 <TextInput placeholder="Username (email)" style={styles.text}
                 onChangeText={(text)=> setEmail(text)}

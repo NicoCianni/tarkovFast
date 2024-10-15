@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
-import Login from './src/screens/Login';
+import Login from './src/screens/User/Login';
+import Register from './src/screens/User/Register';
 import QuestTracker from './src/screens/QuestTracker';
 import Home from './src/screens/Home';
 
@@ -31,6 +32,7 @@ export default function App() {
         headerStyle: {backgroundColor: "black"},
         }}/>
         <Stack.Screen name="Quest Tracker" component={QuestTracker} />
+        <Stack.Screen name="Register" component={Register} />
       </Stack.Navigator>
     );
   }

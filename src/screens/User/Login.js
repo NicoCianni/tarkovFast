@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, Alert } from 'react-native'
 import React, { useState } from "react";
-import appFirebase from '../../credentials'
+import appFirebase from '../../../credentials'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 const auth = getAuth(appFirebase)
 
@@ -8,6 +8,7 @@ const Login = (props) => {
 
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+
 
     const login = async() => {
         try {
@@ -18,6 +19,15 @@ const Login = (props) => {
             console.log(error);
         }
     }
+
+    const register = async() => {
+        try {
+            props.navigation.navigate("Register")
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 
 
     return (
@@ -33,6 +43,11 @@ const Login = (props) => {
             <View style={styles.cajaBoton}>
                 <TouchableOpacity onPress= {login}>
                     <Text style={styles.botonText}>Sign In</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={styles.cajaBoton}>
+                <TouchableOpacity onPress= {register}>
+                    <Text style={styles.botonText}>Register</Text>
                 </TouchableOpacity>
             </View>
         </ImageBackground>

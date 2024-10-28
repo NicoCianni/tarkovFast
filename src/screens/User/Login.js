@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, A
 import React, { useState } from "react";
 import appFirebase from '../../../credentials'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+
 const auth = getAuth(appFirebase)
 
 const Login = (props) => {

@@ -32,7 +32,13 @@ export default function App() {
         headerStyle: {backgroundColor: "black"},
         }}/>
         <Stack.Screen name="Quest Tracker" component={QuestTracker} />
-        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Register" component={Register}
+        options={{
+        title: "Register",
+        headerTintColor: "white",
+        headerTitleAlign: "center",
+        headerStyle: {backgroundColor: "black"},
+        }}/>
       </Stack.Navigator>
     );
   }

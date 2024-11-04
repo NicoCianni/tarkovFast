@@ -7,6 +7,7 @@ import Login from './src/screens/User/Login';
 import Register from './src/screens/User/Register';
 import QuestTracker from './src/screens/QuestTracker';
 import Home from './src/screens/Home';
+import Traders from './src/screens/Traders';
 
 
 
@@ -32,6 +33,7 @@ export default function App() {
         headerStyle: {backgroundColor: "black"},
         }}/>
         <Stack.Screen name="Quest Tracker" component={QuestTracker} />
+        <Stack.Screen name="Traders" component={Traders} />
         <Stack.Screen name="Register" component={Register}
         options={{
         title: "Register",

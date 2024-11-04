@@ -2,10 +2,23 @@ import { ImageBackground, StyleSheet, Text, TouchableOpacity } from 'react-nativ
 import { ScrollView } from 'react-native-gesture-handler'
 
 
-const Home = () => {
+
+
+
+const Home = ({navigation}) => {
+
+    const handleRedirect = (section) => {
+        switch (section) {
+            case "Traders":
+                navigation.navigate("Traders")
+                break;
+        }
+    }
+
+
     return (
         <ScrollView style={styles.fondo}>
-            <TouchableOpacity style={styles.block}>
+            <TouchableOpacity style={styles.block} onPress={() => handleRedirect("Traders")}>
                 <ImageBackground source={{uri: "https://commonsensegamer.com/wp-content/uploads/2023/01/escape-from-tarkov-how-to-level-up-traders-jaeger-1.jpg"}} style={styles.imagen}>
                     <Text style={styles.text}>Traders</Text>
                 </ImageBackground>

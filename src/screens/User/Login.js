@@ -11,14 +11,20 @@ const Login = (props) => {
     const [password, setPassword] = useState()
 
 
-    const login = async() => {
-        try {
-            await signInWithEmailAndPassword(auth, email, password)
-            Alert.alert("Iniciando sesion", "Ingresando...")
-            props.navigation.navigate("Home")
-        } catch (error) {
-            console.log(error);
-        }
+    const login = () => {
+        signInWithEmailAndPassword (auth, email, password)
+        .then((userCredentials) => {
+            const user = userCredentials.user;
+            if (user.emailVerified) {
+                props.navigation.navigate("Home");
+            } else {
+                Alert.alert("Please verify your email before logging in.");
+                auth.signOut()
+            }
+        })
+        .catch((error) => {
+            Alert.alert("Login failed. Please check your email.")
+        })
     }
 
     const register = async() => {

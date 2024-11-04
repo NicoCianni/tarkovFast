@@ -18,7 +18,11 @@ const Register = (props) => {
         createUserWithEmailAndPassword (auth, newEmail, newPassword)
         .then((userCredentials) => {
             const user = userCredentials.user
-            Alert.alert("Register Complete")
+            sendEmailVerification(user)
+            .then(()=> {
+                Alert.alert("Please check your email to verify your account to complete the register");
+                props.navigation.navigate("Login")
+            })
         })
         .catch(error =>{
             console.log(error)
@@ -48,7 +52,7 @@ const Register = (props) => {
                 />
             </View>
             <TouchableOpacity onPress={handleCreateAccount}>
-                <Text>Registrar</Text>
+                <Text>Register</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={relogIn}>
                 <Text>Back to Login</Text>

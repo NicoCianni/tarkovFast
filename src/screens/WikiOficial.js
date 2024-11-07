@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const QuestTracker = () => {
+const WikiOficial = () => {
     return (
         <View>
-            <Text>QuestTracker</Text>
+            <Text>WikiOficial</Text>
         </View>
     )
 }
 
-export default QuestTracker
+export default WikiOficial
 
 const styles = StyleSheet.create({})

@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const QuestTracker = () => {
+const Bullets = () => {
     return (
         <View>
-            <Text>QuestTracker</Text>
+            <Text>Bullets</Text>
         </View>
     )
 }
 
-export default QuestTracker
+export default Bullets
 
 const styles = StyleSheet.create({})

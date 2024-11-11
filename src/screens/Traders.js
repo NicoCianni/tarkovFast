@@ -37,6 +37,11 @@ const Traders = () => {
                 </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.trader}>
+                <ImageBackground source={{uri:"https://th.bing.com/th/id/R.e56aceaa389204ef36eecefca9e5e2f7?rik=Qn1OhVjbQkHrWg&pid=ImgRaw&r=0"}} style={styles.imagenTrader}>
+                    
+                </ImageBackground>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.trader}>
                 <ImageBackground source={{uri:"https://i.ytimg.com/vi/KlgT8IO66-E/maxresdefault.jpg"}} style={styles.imagenTrader}>
                     
                 </ImageBackground>

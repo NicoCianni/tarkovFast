@@ -11,7 +11,7 @@ const Home = ({navigation}) => {
     return (
         <ScrollView style={styles.fondo}>
             <TouchableOpacity style={styles.block} onPress={() => navigation.navigate("Traders")}>
-                <ImageBackground source={{uri: "https://commonsensegamer.com/wp-content/uploads/2023/01/escape-from-tarkov-how-to-level-up-traders-jaeger-1.jpg"}} style={styles.imagen}>
+                <ImageBackground source={{uri: "https://game.mhcdkey.com/image/ask/238818/dpdlvzq4oj0.jpg"}} style={styles.imagen}>
                     <Text style={styles.text}>Traders</Text>
                 </ImageBackground>
             </TouchableOpacity>
@@ -56,11 +56,12 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "white",
-        fontSize: 40,
+        fontSize: 35,
         fontWeight: "800",
-        padding: 5,
-        borderWidth: 5,
-        borderColor: "yellow",
+        padding: 8,
+        borderRadius: 8,
+        borderColor: "black",
         textAlign: "center",
+        backgroundColor: "#2E2E2E",
     },
 })

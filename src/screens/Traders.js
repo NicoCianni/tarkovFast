@@ -3,10 +3,10 @@ import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler'
 
 
 
-const Traders = () => {
+const Traders = ({navigation}) => {
     return (
         <ScrollView style={styles.back}>
-            <TouchableOpacity style={styles.trader}>
+            <TouchableOpacity style={styles.trader} onPress={() => navigation.navigate("TraderStack", {screen: "Prapor"})}>
                 <ImageBackground source={{uri:"https://th.bing.com/th/id/OIP.wMpGXxj_IYwfHx09ByQQJAHaEK?rs=1&pid=ImgDetMain"}} style={styles.imagenTrader}>
 
                 </ImageBackground>

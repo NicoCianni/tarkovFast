@@ -1,5 +1,5 @@
-import { ImageBackground, StyleSheet, Text, TouchableOpacity } from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler'
+import { ImageBackground, StyleSheet, Text } from 'react-native'
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler'
 
 
 

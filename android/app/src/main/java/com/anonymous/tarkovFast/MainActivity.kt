@@ -1,4 +1,4 @@
-package com.tarkovfast
+package com.anonymous.tarkovFast
 
 import android.os.Build
 import android.os.Bundle

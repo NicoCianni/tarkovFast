@@ -1,14 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+
 import React from 'react'
+import SkierTab from '../../tabTraders/SkierTab'
 
 const Skier = () => {
     return (
-        <View>
-            <Text>Skier</Text>
-        </View>
+        <SkierTab />
     )
 }
 
 export default Skier
-
-const styles = StyleSheet.create({})

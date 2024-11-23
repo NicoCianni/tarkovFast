@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import PraporTab from '../../tabTraders/PraporTab';
+
 
 const Prapor = () => {
     return (
-        <View>
-            <Text>Prapor</Text>
-        </View>
-    )
-}
+        <PraporTab />
+    );
+};
 
-export default Prapor
 
-const styles = StyleSheet.create({})
+export default Prapor;

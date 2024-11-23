@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import RefTab from '../../tabTraders/RefTab'
 
 const Ref = () => {
     return (
-        <View>
-            <Text>Ref</Text>
-        </View>
+        <RefTab />
     )
 }
 
 export default Ref
-
-const styles = StyleSheet.create({})

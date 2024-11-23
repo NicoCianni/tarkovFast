@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import TherapistTab from "../../tabTraders/TherapistTab"
 
 const Therapist = () => {
     return (
-        <View>
-            <Text>Therapist</Text>
-        </View>
+        <TherapistTab />
     )
 }
 
 export default Therapist
-
-const styles = StyleSheet.create({})

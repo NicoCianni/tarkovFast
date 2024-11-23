@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import RagmanTab from '../../tabTraders/RagmanTab'
 
 const Ragman = () => {
     return (
-        <View>
-            <Text>Ragman</Text>
-        </View>
+        <RagmanTab />
     )
 }
 
 export default Ragman
-
-const styles = StyleSheet.create({})

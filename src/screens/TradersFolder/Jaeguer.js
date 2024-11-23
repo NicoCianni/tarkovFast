@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import JaeguerTab from '../../tabTraders/JaeguerTab'
 
 const Jaeguer = () => {
     return (
-        <View>
-            <Text>Jaeguer</Text>
-        </View>
+        <JaeguerTab />
     )
 }
 
 export default Jaeguer
-
-const styles = StyleSheet.create({})

@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import FenceTab from '../../tabTraders/FenceTab'
 
 const Fence = () => {
     return (
-        <View>
-            <Text>Fence</Text>
-        </View>
+        <FenceTab />
     )
 }
 
 export default Fence
-
-const styles = StyleSheet.create({})

@@ -1,14 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import PeacekeeperTab from '../../tabTraders/PeacekeeperTab'
 
 const Peacekeeper = () => {
     return (
-        <View>
-            <Text>Peacekeeper</Text>
-        </View>
+        <PeacekeeperTab />
     )
 }
 
 export default Peacekeeper
-
-const styles = StyleSheet.create({})

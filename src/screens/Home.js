@@ -11,23 +11,19 @@ const Home = ({navigation}) => {
     return (
         <ScrollView style={styles.fondo}>
             <TouchableOpacity style={styles.block} onPress={() => navigation.navigate("Traders")}>
-                <ImageBackground source={{uri: "https://game.mhcdkey.com/image/ask/238818/dpdlvzq4oj0.jpg"}} style={styles.imagen}>
-                    <Text style={styles.text}>Traders</Text>
+                <ImageBackground source={{uri: "https://i.ytimg.com/vi/uFk4RcFq9BI/maxresdefault.jpg"}} style={styles.imagen}>
                 </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.block} onPress={() => navigation.navigate("Quest Tracker")}>
-                <ImageBackground source={{uri:"https://th.bing.com/th/id/OIP.BUh39Tn3Hp3ICLR5H345SQHaEP?rs=1&pid=ImgDetMain"}} style={styles.imagen}>
-                    <Text style={styles.text}>Quests</Text>
+                <ImageBackground source={{uri:"https://th.bing.com/th/id/OIP.Ix29EYHMeoST5hkm7jhluAAAAA?rs=1&pid=ImgDetMain"}} style={styles.imagen}>
                 </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.block} onPress={() => navigation.navigate("Bullets")}>
-                <ImageBackground source={{uri:"https://guided.news/wp-content/uploads/2021/02/tarkov-ammo-chart-768x373.jpg"}} style={styles.imagen}>
-                    <Text style={styles.text}>Bullets</Text>
+                <ImageBackground source={{uri:"https://guided.news/wp-content/uploads/2021/02/tarkov-ammo-chart-1024x497.jpg"}} style={styles.imagen}>
                 </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.block} onPress={() => navigation.navigate("Wiki Oficial")}>
-                <ImageBackground source={{uri:"https://th.bing.com/th/id/OIP.utsaMVoErXeJ9RtoqXVDbAHaF9?rs=1&pid=ImgDetMain"}} style={styles.imagen}>
-                    <Text style={styles.text}>Wiki Oficial</Text>
+                <ImageBackground source={{uri:"https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20221016193554"}} resizeMode='contain' style={styles.imagen}>
                 </ImageBackground>
             </TouchableOpacity>
         </ScrollView>
@@ -38,7 +34,7 @@ export default Home
 
 const styles = StyleSheet.create({
     fondo: {
-        backgroundColor: "#4C4C4C",
+        backgroundColor: "black",
         padding: 5,
     },
     block:{

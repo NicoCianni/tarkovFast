@@ -1,33 +1,30 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, Text } from 'react-native';
+import PraporTab1 from '../navigationTabs/PraporTab1';
+import PraporTab2 from '../navigationTabs/PraporTab2';
+import PraporTab3 from '../navigationTabs/PraporTab3';
 
 const Tab = createBottomTabNavigator();
 
 // Pantallas de ejemplo para las pestañas
-const Tab1 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 1 Content</Text>
-    </View>
+const PraporTabOne = () => (
+    <PraporTab1 />
 );
 
-const Tab2 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 2 Content</Text>
-    </View>
+const PraporTabTwo = () => (
+    <PraporTab2 />
 );
 
-const Tab3 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 3 Content</Text>
-    </View>
+const PraporTabThree = () => (
+    <PraporTab3 />
 );
 
 const PraporTab = () => {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
-            <Tab.Screen name="Tab1" component={Tab1} options={{ title: 'Tab 1' }} />
-            <Tab.Screen name="Tab2" component={Tab2} options={{ title: 'Tab 2' }} />
-            <Tab.Screen name="Tab3" component={Tab3} options={{ title: 'Tab 3' }} />
+            <Tab.Screen name="Tab1" component={PraporTabOne} options={{ title: 'Tab 1' }} />
+            <Tab.Screen name="Tab2" component={PraporTabTwo} options={{ title: 'Tab 2' }} />
+            <Tab.Screen name="Tab3" component={PraporTabThree} options={{ title: 'Tab 3' }} />
         </Tab.Navigator>
     );
 };

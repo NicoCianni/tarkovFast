@@ -1,33 +1,30 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, Text } from 'react-native';
+import JaeguerTab1 from '../navigationTabs/JaeguerTab1';
+import JaeguerTab2 from '../navigationTabs/JaeguerTab2';
+import JaeguerTab3 from '../navigationTabs/JaeguerTab3';
 
 const Tab = createBottomTabNavigator();
 
 // Pantallas de ejemplo para las pestañas
-const Tab1 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 1 Content</Text>
-    </View>
+const JaeguerTabOne = () => (
+    <JaeguerTab1 />
 );
 
-const Tab2 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 2 Content</Text>
-    </View>
+const JaeguerTabTwo = () => (
+    <JaeguerTab2 />
 );
 
-const Tab3 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 3 Content</Text>
-    </View>
+const JaeguerTabThree = () => (
+    <JaeguerTab3 />
 );
 
 const JaeguerTab = () => {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
-            <Tab.Screen name="Tab1" component={Tab1} options={{ title: 'Tab 1' }} />
-            <Tab.Screen name="Tab2" component={Tab2} options={{ title: 'Tab 2' }} />
-            <Tab.Screen name="Tab3" component={Tab3} options={{ title: 'Tab 3' }} />
+            <Tab.Screen name="Tab1" component={JaeguerTabOne} options={{ title: 'Tab 1' }} />
+            <Tab.Screen name="Tab2" component={JaeguerTabTwo} options={{ title: 'Tab 2' }} />
+            <Tab.Screen name="Tab3" component={JaeguerTabThree} options={{ title: 'Tab 3' }} />
         </Tab.Navigator>
     );
 };

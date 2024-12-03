@@ -1,33 +1,30 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, Text } from 'react-native';
+import PeacekeeperTab1 from '../navigationTabs/PeacekeeperTab1';
+import PeacekeeperTab2 from '../navigationTabs/PeacekeeperTab2';
+import PeacekeeperTab3 from '../navigationTabs/PeacekeeperTab3';
 
 const Tab = createBottomTabNavigator();
 
 // Pantallas de ejemplo para las pestañas
-const Tab1 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 1 Content</Text>
-    </View>
+const PeacekeeperTabOne = () => (
+    <PeacekeeperTab1 />
 );
 
-const Tab2 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 2 Content</Text>
-    </View>
+const PeacekeeperTabTwo = () => (
+    <PeacekeeperTab2 />
 );
 
-const Tab3 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 3 Content</Text>
-    </View>
+const PeacekeeperTabThree = () => (
+    <PeacekeeperTab3 />
 );
 
 const PeacekeeperTab = () => {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
-            <Tab.Screen name="Tab1" component={Tab1} options={{ title: 'Tab 1' }} />
-            <Tab.Screen name="Tab2" component={Tab2} options={{ title: 'Tab 2' }} />
-            <Tab.Screen name="Tab3" component={Tab3} options={{ title: 'Tab 3' }} />
+            <Tab.Screen name="Tab1" component={PeacekeeperTabOne} options={{ title: 'Tab 1' }} />
+            <Tab.Screen name="Tab2" component={PeacekeeperTabTwo} options={{ title: 'Tab 2' }} />
+            <Tab.Screen name="Tab3" component={PeacekeeperTabThree} options={{ title: 'Tab 3' }} />
         </Tab.Navigator>
     );
 };

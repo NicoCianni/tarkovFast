@@ -1,33 +1,30 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, Text } from 'react-native';
+import FenceTab1 from '../navigationTabs/FenceTab1';
+import FenceTab2 from '../navigationTabs/FenceTab2';
+import FenceTab3 from '../navigationTabs/FenceTab3';
 
 const Tab = createBottomTabNavigator();
 
 // Pantallas de ejemplo para las pestañas
-const Tab1 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 1 Content</Text>
-    </View>
+const FenceTabOne = () => (
+    <FenceTab1 />
 );
 
-const Tab2 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 2 Content</Text>
-    </View>
+const FenceTabTwo = () => (
+    <FenceTab2 />
 );
 
-const Tab3 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 3 Content</Text>
-    </View>
+const FenceTabThree = () => (
+    <FenceTab3 />
 );
 
 const FenceTab = () => {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
-            <Tab.Screen name="Tab1" component={Tab1} options={{ title: 'Tab 1' }} />
-            <Tab.Screen name="Tab2" component={Tab2} options={{ title: 'Tab 2' }} />
-            <Tab.Screen name="Tab3" component={Tab3} options={{ title: 'Tab 3' }} />
+            <Tab.Screen name="Tab1" component={FenceTabOne} options={{ title: 'Tab 1' }} />
+            <Tab.Screen name="Tab2" component={FenceTabTwo} options={{ title: 'Tab 2' }} />
+            <Tab.Screen name="Tab3" component={FenceTabThree} options={{ title: 'Tab 3' }} />
         </Tab.Navigator>
     );
 };

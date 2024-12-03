@@ -1,33 +1,30 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, Text } from 'react-native';
+import TherapistTab1 from '../navigationTabs/TherapistTab1';
+import TherapistTab2 from '../navigationTabs/TherapistTab2';
+import TherapistTab3 from '../navigationTabs/TherapistTab3';
 
 const Tab = createBottomTabNavigator();
 
 // Pantallas de ejemplo para las pestañas
-const Tab1 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 1 Content</Text>
-    </View>
+const TherapistTabOne = () => (
+    <TherapistTab1 />
 );
 
-const Tab2 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 2 Content</Text>
-    </View>
+const TherapistTabTwo = () => (
+    <TherapistTab2 />
 );
 
-const Tab3 = () => (
-    <View style={styles.screen}>
-        <Text>Tab 3 Content</Text>
-    </View>
+const TherapistTabThree = () => (
+    <TherapistTab3 />
 );
 
 const TherapistTab = () => {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
-            <Tab.Screen name="Tab1" component={Tab1} options={{ title: 'Tab 1' }} />
-            <Tab.Screen name="Tab2" component={Tab2} options={{ title: 'Tab 2' }} />
-            <Tab.Screen name="Tab3" component={Tab3} options={{ title: 'Tab 3' }} />
+            <Tab.Screen name="Tab1" component={TherapistTabOne} options={{ title: 'Tab 1' }} />
+            <Tab.Screen name="Tab2" component={TherapistTabTwo} options={{ title: 'Tab 2' }} />
+            <Tab.Screen name="Tab3" component={TherapistTabThree} options={{ title: 'Tab 3' }} />
         </Tab.Navigator>
     );
 };
